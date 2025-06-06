@@ -1,6 +1,20 @@
 package dao;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
 public class Conexao {
+<<<<<<< HEAD
+private static final String URL = "jdbc:mysql://localhost:3306/controle_estoque";
+private static final String USUARIO = "root";
+private static final String SENHA = "";
+
+public static Connection getConexao() throws SQLException {
+return DriverManager.getConnection(URL, USUARIO, SENHA);
+ }
+}
+=======
 import model.Categoria;
 
 import java.sql.*;
@@ -84,3 +98,4 @@ public class CategoriaDAO {
 
     
 }
+>>>>>>> dc1c8f481c3e4939fb40e306aa774e09f2f799df
