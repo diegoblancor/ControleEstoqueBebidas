@@ -1,8 +1,7 @@
 package dao;
 
 public class CategoriaDAO {
-    import model.Categoria;
-
+import model.Categoria;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
