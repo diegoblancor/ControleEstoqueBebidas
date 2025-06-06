@@ -1,6 +1,7 @@
 package model;
 
 public class Produto {
+<<<<<<< HEAD
  private int id;
  private String nome;
  private double precoUnitario;
@@ -110,3 +111,7 @@ int quantidade, int quantidadeMinima, int quantidadeMaxima, Categoria categoria)
  nome, quantidade, unidade, precoUnitario, categoria.getNome());
  }
 }
+=======
+
+}
+>>>>>>> dc1c8f481c3e4939fb40e306aa774e09f2f799df

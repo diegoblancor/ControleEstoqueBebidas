@@ -1,5 +1,8 @@
-package model;
+package model; 
 
+public class Categoria { 
+
+<<<<<<< HEAD
 public class Categoria {
 private int id;
 private String nome;
@@ -50,3 +53,6 @@ public Categoria(String nome, String tamanho, String embalagem) {
  return nome + " (" + tamanho + ", " + embalagem + ")";
  }
 }
+=======
+}
+>>>>>>> dc1c8f481c3e4939fb40e306aa774e09f2f799df

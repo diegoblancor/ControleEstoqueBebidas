@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.Map;
 
 public class RelatoriosService {
+<<<<<<< HEAD
 
  public void listaDePrecos(List<Produto> produtos, StringBuilder sb) {
  produtos.stream()
@@ -86,3 +87,6 @@ public void balancoFisicoFinanceiro(List<Produto> produtos) {
  System.out.println(sb.toString());
  }
 }
+=======
+}
+>>>>>>> dc1c8f481c3e4939fb40e306aa774e09f2f799df
