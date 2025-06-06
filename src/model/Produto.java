@@ -1,7 +1,7 @@
 package model; 
 
- 
 
+ 
 public class Produto { 
 
  private int id; 
@@ -221,3 +221,9 @@ public int getId() {
  } 
 
 } 
+=======
+public class {
+
+}
+
+>>>>>>> dc1c8f481c3e4939fb40e306aa774e09f2f799df

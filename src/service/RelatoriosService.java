@@ -170,3 +170,9 @@ public void quantidadePorCategoria(List<Produto> produtos, StringBuilder sb) {
  } 
 
 } 
+=======
+package service;
+
+public class RelatoriosService {
+}
+>>>>>>> dc1c8f481c3e4939fb40e306aa774e09f2f799df

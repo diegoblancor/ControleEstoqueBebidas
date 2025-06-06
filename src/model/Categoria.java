@@ -8,7 +8,7 @@ public class Categoria {
 
  private String nome; 
 
- private String tamanho;  // Pequeno, Médio, Grande 
+ private String tamanho;   // Pequeno, Médio, Grande 
 
  private String embalagem; // Lata, Vidro, Plástico 
 
@@ -16,7 +16,7 @@ public class Categoria {
 
  public Categoria(String nome, String tamanho, String embalagem) { 
 
- this.nome = nome; 
+this.nome = nome; 
 
  this.tamanho = tamanho; 
 
@@ -100,4 +100,4 @@ public class Categoria {
 
  } 
 
-}
+} 
