@@ -1,117 +1,112 @@
 package model;
 
 public class Produto {
-<<<<<<< HEAD
- private int id;
- private String nome;
- private double precoUnitario;
- private String unidade;
- private int quantidade;
- private int quantidadeMinima;
- private int quantidadeMaxima;
- private Categoria categoria;
+    private int id;
+    private String nome;
+    private double precoUnitario;
+    private String unidade;
+    private int quantidade;
+    private int quantidadeMinima;
+    private int quantidadeMaxima;
+    private Categoria categoria;
 
- public Produto(String nome, double precoUnitario, String unidade,
-int quantidade, int quantidadeMinima, int quantidadeMaxima, Categoria categoria) {
- this.nome = nome;
- this.precoUnitario = precoUnitario;
- this.unidade = unidade;
- this.quantidade = quantidade;
- this.quantidadeMinima = quantidadeMinima;
- this.quantidadeMaxima = quantidadeMaxima;
- this.categoria = categoria;
- }
+    public Produto(String nome, double precoUnitario, String unidade,
+                   int quantidade, int quantidadeMinima, int quantidadeMaxima, Categoria categoria) {
+        this.nome = nome;
+        this.precoUnitario = precoUnitario;
+        this.unidade = unidade;
+        this.quantidade = quantidade;
+        this.quantidadeMinima = quantidadeMinima;
+        this.quantidadeMaxima = quantidadeMaxima;
+        this.categoria = categoria;
+    }
 
- // Getters e Setters
- public int getId() {
- return id;
- }
+    // Getters e Setters
+    public int getId() {
+        return id;
+    }
 
- public void setId(int id) {
- this.id = id;
- }
+    public void setId(int id) {
+        this.id = id;
+    }
 
- public String getNome() {
- return nome;
- }
+    public String getNome() {
+        return nome;
+    }
 
- public double getPrecoUnitario() {
- return precoUnitario;
- }
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
 
- public String getUnidade() {
- return unidade;
- }
+    public double getPrecoUnitario() {
+        return precoUnitario;
+    }
 
- public int getQuantidade() {
- return quantidade;
- }
+    public void setPrecoUnitario(double precoUnitario) {
+        this.precoUnitario = precoUnitario;
+    }
 
- public int getQuantidadeMinima() {
- return quantidadeMinima;
- }
+    public String getUnidade() {
+        return unidade;
+    }
 
- public int getQuantidadeMaxima() {
- return quantidadeMaxima;
- }
+    public void setUnidade(String unidade) {
+        this.unidade = unidade;
+    }
 
- public Categoria getCategoria() {
- return categoria;
- }
+    public int getQuantidade() {
+        return quantidade;
+    }
 
- public void setNome(String nome) {
- this.nome = nome;
- }
+    public void setQuantidade(int quantidade) {
+        this.quantidade = quantidade;
+    }
 
- public void setPrecoUnitario(double precoUnitario) {
- this.precoUnitario = precoUnitario;
- }
+    public int getQuantidadeMinima() {
+        return quantidadeMinima;
+    }
 
- public void setUnidade(String unidade) {
- this.unidade = unidade;
- }
+    public void setQuantidadeMinima(int quantidadeMinima) {
+        this.quantidadeMinima = quantidadeMinima;
+    }
 
- public void setQuantidade(int quantidade) {
- this.quantidade = quantidade;
- }
+    public int getQuantidadeMaxima() {
+        return quantidadeMaxima;
+    }
 
- public void setQuantidadeMinima(int quantidadeMinima) {
- this.quantidadeMinima = quantidadeMinima;
- }
+    public void setQuantidadeMaxima(int quantidadeMaxima) {
+        this.quantidadeMaxima = quantidadeMaxima;
+    }
 
- public void setQuantidadeMaxima(int quantidadeMaxima) {
- this.quantidadeMaxima = quantidadeMaxima;
- }
+    public Categoria getCategoria() {
+        return categoria;
+    }
 
- public void setCategoria(Categoria categoria) {
- this.categoria = categoria;
- }
+    public void setCategoria(Categoria categoria) {
+        this.categoria = categoria;
+    }
 
- // Métodos de movimentação de estoque
- public void entradaEstoque(int quantidadeAdicionada) {
- this.quantidade += quantidadeAdicionada;
- }
+    // Métodos de movimentação de estoque
+    public void entradaEstoque(int quantidadeAdicionada) {
+        this.quantidade += quantidadeAdicionada;
+    }
 
- public void saidaEstoque(int quantidadeRemovida) {
- this.quantidade -= quantidadeRemovida;
- }
+    public void saidaEstoque(int quantidadeRemovida) {
+        this.quantidade -= quantidadeRemovida;
+    }
 
- // Aliases para compatibilidade com nomes usados em outras classes
- public int getQtdMin() {
- return getQuantidadeMinima();
- }
+    // Aliases para compatibilidade com nomes usados em outras classes
+    public int getQtdMin() {
+        return getQuantidadeMinima();
+    }
 
- public int getQtdMax() {
- return getQuantidadeMaxima();
- }
+    public int getQtdMax() {
+        return getQuantidadeMaxima();
+    }
 
- @Override
- public String toString() {
- return String.format("%s - %d %s - R$ %.2f - Categoria: %s",
- nome, quantidade, unidade, precoUnitario, categoria.getNome());
- }
+    @Override
+    public String toString() {
+        return String.format("%s - %d %s - R$ %.2f - Categoria: %s",
+                nome, quantidade, unidade, precoUnitario, categoria.getNome());
+    }
 }
-=======
-
-}
->>>>>>> dc1c8f481c3e4939fb40e306aa774e09f2f799df
