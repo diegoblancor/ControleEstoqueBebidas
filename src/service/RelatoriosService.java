@@ -54,7 +54,7 @@ public class RelatoriosService {
                 sb.append(String.format("- %s: %d produto(s)\n", categoria, quantidade)));
     }
 
-    // Métodos para uso no terminal (impressão direta)
+    // Métodos para uso no terminal
     public void listaDePrecos(List<Produto> produtos) {
         StringBuilder sb = new StringBuilder();
         listaDePrecos(produtos, sb);
@@ -83,19 +83,5 @@ public class RelatoriosService {
         StringBuilder sb = new StringBuilder();
         quantidadePorCategoria(produtos, sb);
         System.out.println(sb.toString());
-    }
-
-    // Relatório completo agregado (opcional)
-    public void gerarRelatorioCompleto(List<Produto> produtos) {
-        System.out.println("=== LISTA DE PREÇOS ===");
-        listaDePrecos(produtos);
-        System.out.println("\n=== BALANÇO FÍSICO-FINANCEIRO ===");
-        balancoFisicoFinanceiro(produtos);
-        System.out.println("\n=== PRODUTOS ABAIXO DO MÍNIMO ===");
-        produtosAbaixoMinimo(produtos);
-        System.out.println("\n=== PRODUTOS ACIMA DO MÁXIMO ===");
-        produtosAcimaMaximo(produtos);
-        System.out.println("\n=== QUANTIDADE POR CATEGORIA ===");
-        quantidadePorCategoria(produtos);
     }
 }

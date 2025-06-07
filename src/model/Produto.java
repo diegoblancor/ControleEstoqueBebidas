@@ -34,52 +34,52 @@ public class Produto {
         return nome;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
     public double getPrecoUnitario() {
         return precoUnitario;
-    }
-
-    public void setPrecoUnitario(double precoUnitario) {
-        this.precoUnitario = precoUnitario;
     }
 
     public String getUnidade() {
         return unidade;
     }
 
-    public void setUnidade(String unidade) {
-        this.unidade = unidade;
-    }
-
     public int getQuantidade() {
         return quantidade;
-    }
-
-    public void setQuantidade(int quantidade) {
-        this.quantidade = quantidade;
     }
 
     public int getQuantidadeMinima() {
         return quantidadeMinima;
     }
 
-    public void setQuantidadeMinima(int quantidadeMinima) {
-        this.quantidadeMinima = quantidadeMinima;
-    }
-
     public int getQuantidadeMaxima() {
         return quantidadeMaxima;
     }
 
-    public void setQuantidadeMaxima(int quantidadeMaxima) {
-        this.quantidadeMaxima = quantidadeMaxima;
-    }
-
     public Categoria getCategoria() {
         return categoria;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setPrecoUnitario(double precoUnitario) {
+        this.precoUnitario = precoUnitario;
+    }
+
+    public void setUnidade(String unidade) {
+        this.unidade = unidade;
+    }
+
+    public void setQuantidade(int quantidade) {
+        this.quantidade = quantidade;
+    }
+
+    public void setQuantidadeMinima(int quantidadeMinima) {
+        this.quantidadeMinima = quantidadeMinima;
+    }
+
+    public void setQuantidadeMaxima(int quantidadeMaxima) {
+        this.quantidadeMaxima = quantidadeMaxima;
     }
 
     public void setCategoria(Categoria categoria) {

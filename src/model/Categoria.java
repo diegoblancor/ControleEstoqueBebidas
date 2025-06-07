@@ -25,20 +25,20 @@ public class Categoria {
         return nome;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
     public String getTamanho() {
         return tamanho;
     }
 
-    public void setTamanho(String tamanho) {
-        this.tamanho = tamanho;
-    }
-
     public String getEmbalagem() {
         return embalagem;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setTamanho(String tamanho) {
+        this.tamanho = tamanho;
     }
 
     public void setEmbalagem(String embalagem) {
