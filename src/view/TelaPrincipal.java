@@ -94,56 +94,40 @@ public class TelaPrincipal extends JFrame {
     }
 
     private void entradaEstoque() {
-        try {
-            String nome = JOptionPane.showInputDialog(this, "Nome do produto (entrada):");
-            int qtd = Integer.parseInt(JOptionPane.showInputDialog(this, "Quantidade de entrada:"));
-            estoque.entradaEstoque(nome, qtd);
-            areaTexto.setText("Entrada realizada!");
-        } catch (Exception e) {
-            areaTexto.setText("Erro na entrada: " + e.getMessage());
-        }
+        String nome = JOptionPane.showInputDialog(this, "Nome do produto (entrada):");
+        int qtd = Integer.parseInt(JOptionPane.showInputDialog(this, "Quantidade de entrada:"));
+        estoque.entradaEstoque(nome, qtd);
+        areaTexto.setText("Entrada realizada!");
     }
 
     private void saidaEstoque() {
-        try {
-            String nome = JOptionPane.showInputDialog(this, "Nome do produto (saída):");
-            int qtd = Integer.parseInt(JOptionPane.showInputDialog(this, "Quantidade de saída:"));
-            estoque.saidaEstoque(nome, qtd);
-            areaTexto.setText("Saída realizada!");
-        } catch (Exception e) {
-            areaTexto.setText("Erro na saída: " + e.getMessage());
-        }
+        String nome = JOptionPane.showInputDialog(this, "Nome do produto (saída):");
+        int qtd = Integer.parseInt(JOptionPane.showInputDialog(this, "Quantidade de saída:"));
+        estoque.saidaEstoque(nome, qtd);
+        areaTexto.setText("Saída realizada!");
     }
 
     private void reajustarPrecos() {
-        try {
-            double perc = Double.parseDouble(JOptionPane.showInputDialog(this, "Percentual de reajuste:"));
-            estoque.reajustarPrecos(perc);
-            areaTexto.setText("Preços reajustados!");
-        } catch (Exception e) {
-            areaTexto.setText("Erro no reajuste: " + e.getMessage());
-        }
+        double perc = Double.parseDouble(JOptionPane.showInputDialog(this, "Percentual de reajuste:"));
+        estoque.reajustarPrecos(perc);
+        areaTexto.setText("Preços reajustados!");
     }
 
     private void gerarRelatorios() {
-        try {
-            RelatoriosService r = new RelatoriosService();
-            List<Produto> produtos = estoque.getProdutos();
-            StringBuilder sb = new StringBuilder();
-            sb.append("RELATÓRIOS\n\n");
-            sb.append("Lista de Preços:\n");
-            r.listaDePrecos(produtos, sb);
-            sb.append("\nBalanço Físico/Financeiro:\n");
-            r.balancoFisicoFinanceiro(produtos, sb);
-            sb.append("\nProdutos abaixo do mínimo:\n");
-            r.produtosAbaixoMinimo(produtos, sb);
-            sb.append("\nProdutos acima do máximo:\n");
-            r.produtosAcimaMaximo(produtos, sb);
-            sb.append("\nQuantidade por categoria:\n");
-            r.quantidadePorCategoria(produtos, sb);
-            areaTexto.setText(sb.toString());
-        } catch (Exception e) {
-            areaTexto.setText("Erro ao gerar relatórios: " + e.getMessage());
-        }
+        RelatoriosService r = new RelatoriosService();
+        List<Produto> produtos = estoque.getProdutos();
+        StringBuilder sb = new StringBuilder();
+        sb.append("RELATÓRIOS\n\n");
+        sb.append("Lista de Preços:\n");
+        r.listaDePrecos(produtos, sb);
+        sb.append("\nBalanço Físico/Financeiro:\n");
+        r.balancoFisicoFinanceiro(produtos, sb);
+        sb.append("\nProdutos abaixo do mínimo:\n");
+        r.produtosAbaixoMinimo(produtos, sb);
+        sb.append("\nProdutos acima do máximo:\n");
+        r.produtosAcimaMaximo(produtos, sb);
+        sb.append("\nQuantidade por categoria:\n");
+        r.quantidadePorCategoria(produtos, sb);
+        areaTexto.setText(sb.toString());
     }
 }
